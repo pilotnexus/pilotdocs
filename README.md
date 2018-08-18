@@ -1,4 +1,4 @@
-# Initial page
+# Main Page
 
 PiLOT Ctrl provides you with the ability to upgrade [SBCs](https://en.wikipedia.org/wiki/Single-board_computer) \(single-board computers\) into very powerful control platforms.
 
