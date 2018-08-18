@@ -2,4 +2,5 @@
 
 * [Main Page](README.md)
 * [Test A](test-a.md)
+* [Test B](test-b.md)
 
