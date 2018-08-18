@@ -42,7 +42,8 @@ guarantee of cycle time real-time processing Normally for this PLCs are used \(n
 
 ### MCU \(Microcontroller unit\)
 
-STM32F103RC [MCU](https://en.wikipedia.org/wiki/Microcontroller) 
+STM32F103RC [MCU](https://en.wikipedia.org/wiki/Microcontroller)   
+
 
 ![](.gitbook/assets/stm32f103.jpg)
 
@@ -52,107 +53,76 @@ The STM32F103xC, STM32F103xD and STM32F103xE performance line family incorporate
 The STM32F103xC/D/E high-density performance line family operates in the –40 to +105 °C temperature range, from a 2.0 to 3.6 V power supply. A comprehensive set of power-saving mode allows the design of low-power applications.   
 
 
-These features make the STM32F103xC/D/E high-density performance line microcontroller family suitable for a wide range of applications such as motor drives, application control, medical and handheld equipment, PC and gaming peripherals, GPS platforms, industrial applications, PLCs, inverters, printers, scanners, alarm systems video intercom, and HVAC.  
-  
-
-
 * Core: ARM® 32-bit Cortex®-M3 CPU
-
-  72 MHz maximum frequency, 1.25 DMIPS/MHz \(Dhrystone 2.1\) performance at 0 wait state memory access
-
-  Single-cycle multiplication and hardware division
-
+  * 72 MHz maximum frequency, 1.25 DMIPS/MHz \(Dhrystone 2.1\) performance at 0 wait state memory access
+  * Single-cycle multiplication and hardware division
 * Memories
-
-  \*\* 256 to 512 Kbytes of Flash memory
-
-  \*\* up to 64 Kbytes of SRAM
-
-  \*\* Flexible static memory controller with 4 Chip Select. Supports Compact Flash, SRAM, PSRAM, NOR and NAND memories
-
-  \*\* LCD parallel interface, 8080/6800 modes
-
+  * 256 to 512 Kbytes of Flash memory
+  * up to 64 Kbytes of SRAM
+  * Flexible static memory controller with 4 Chip Select. Supports Compact Flash, SRAM, PSRAM, NOR and NAND memories
+  * LCD parallel interface, 8080/6800 modes
 * Clock, reset and supply management
-
-  \*\* 2.0 to 3.6 V application supply and I/Os
-
-  \*\* POR, PDR, and programmable voltage detector \(PVD\)
-
-  \*\* 4-to-16 MHz crystal oscillator
-
-  \*\* Internal 8 MHz factory-trimmed RC
-
-  \*\* Internal 40 kHz RC with calibration
-
-  \*\* 32 kHz oscillator for RTC with calibration
-
+  * 2.0 to 3.6 V application supply and I/Os
+  * POR, PDR, and programmable voltage detector \(PVD\)
+  * 4-to-16 MHz crystal oscillator
+  * Internal 8 MHz factory-trimmed RC
+  * Internal 40 kHz RC with calibration
+  * 32 kHz oscillator for RTC with calibration
 * Low power
-
-  \*\* Sleep, Stop and Standby modes
-
-  \*\* VBAT supply for RTC and backup registers
-
+  * Sleep, Stop and Standby modes
+  * VBAT supply for RTC and backup registers
 * 3 × 12-bit, 1 μs A/D converters \(up to 21 channels\)
-
-  \*\* Conversion range: 0 to 3.6 V
-
-  \*\* Triple-sample and hold capability
-
-  \*\* Temperature sensor
-
+  * Conversion range: 0 to 3.6 V
+  * Triple-sample and hold capability
+  * Temperature sensor
 * 2 × 12-bit D/A converters
 * DMA: 12-channel DMA controller
-
-  \*\* Supported peripherals: timers, ADCs, DAC, SDIO, I2Ss, SPIs, I2Cs and USARTs
-
+  * Supported peripherals: timers, ADCs, DAC, SDIO, I2Ss, SPIs, I2Cs and USARTs
 * Debug mode
-
-  \*\* Serial wire debug \(SWD\) & JTAG interfaces
-
-  \*\* Cortex®-M3 Embedded Trace Macrocell™
-
+  * Serial wire debug \(SWD\) & JTAG interfaces
+  * Cortex®-M3 Embedded Trace Macrocell™
 * Up to 112 fast I/O ports
-
-  \*\* 51/80/112 I/Os, all mappable on 16 external interrupt vectors and almost all 5 V-tolerant
-
+  * 51/80/112 I/Os, all mappable on 16 external interrupt vectors and almost all 5 V-tolerant
 * Up to 11 timers
-
-  \*\* Up to four 16-bit timers, each with up to 4 IC/OC/PWM or pulse counter and quadrature \(incremental\) encoder input
-
-  \*\* 2 × 16-bit motor control PWM timers with dead-time generation and emergency stop
-
-  \*\* 2 × watchdog timers \(Independent and Window\)
-
-  \*\* SysTick timer: a 24-bit downcounter
-
-  \*\* 2 × 16-bit basic timers to drive the DAC
-
+  * Up to four 16-bit timers, each with up to 4 IC/OC/PWM or pulse counter and quadrature \(incremental\) encoder input
+  * 2 × 16-bit motor control PWM timers with dead-time generation and emergency stop
+  * 2 × watchdog timers \(Independent and Window\)
+  * SysTick timer: a 24-bit downcounter
+  * 2 × 16-bit basic timers to drive the DAC
 * Up to 13 communication interfaces
-
-  \*\* Up to 2 × I2C interfaces \(SMBus/PMBus\)
-
-  \*\* Up to 5 USARTs \(ISO 7816 interface, LIN, IrDA capability, modem control\)
-
-  \*\* Up to 3 SPIs \(18 Mbit/s\), 2 with I2S interface multiplexed
-
-  \*\* CAN interface \(2.0B Active\)
-
-  \*\* USB 2.0 full speed interface
-
-  \*\* SDIO interface
-
+  * Up to 2 × I2C interfaces \(SMBus/PMBus\)
+  * Up to 5 USARTs \(ISO 7816 interface, LIN, IrDA capability, modem control\)
+  * Up to 3 SPIs \(18 Mbit/s\), 2 with I2S interface multiplexed
+  * CAN interface \(2.0B Active\)
+  * USB 2.0 full speed interface
+  * SDIO interface
 * CRC calculation unit, 96-bit unique ID
 * ECOPACK® packages
 
-  [Datasheet](https://www.st.com/resource/en/datasheet/stm32f103rc.pdf)
+
+
+These features make the STM32F103xC/D/E high-density performance line microcontroller family suitable for a wide range of applications such as motor drives, application control, medical and handheld equipment, PC and gaming peripherals, GPS platforms, industrial applications, PLCs, inverters, printers, scanners, alarm systems video intercom, and HVAC.
+
+
+
+[Datasheet](https://www.st.com/resource/en/datasheet/stm32f103rc.pdf)
+
+
+
+
 
 ### CPLD \(Complex programmable logic device\)
 
-Altera Max V [CPLD](https://en.wikipedia.org/wiki/Complex_programmable_logic_device)   
+Altera Max V [CPLD](https://en.wikipedia.org/wiki/Complex_programmable_logic_device) 
+
+![](.gitbook/assets/altera-max-v.jpg)
+
 
 
 Leveraging the successful MAX® II architecture, MAX® V devices combine instant-on, non-volatile CPLD characteristics with advanced features typically found in FPGAs, such as phase-locked loops \(PLLs\), on-chip memory, and internal oscillators.   
- The MAX V CPLD architecture includes an array of logic elements \(LEs grouped in logic array blocks \(LABs\)\), memory resources \(non-volatile flash and LE RAM\), digital PLLs, global signals \(clocks or control signals\), and a generous amount of user I/Os. The MultiTrack interconnect is designed to maximize performance and minimize power by using the most efficient, direct connection from input to logic to output. Find more details about the MAX® V architecture in the MAX® V Device Family Data Sheet \(PDF\).   
+
+
+The MAX V CPLD includes an array of logic elements \(LEs grouped in logic array blocks \(LABs\)\), memory resources \(non-volatile flash and LE RAM\), digital PLLs, global signals \(clocks or control signals\), and a generous amount of user I/Os. The MultiTrack interconnect is designed to maximize performance and minimize power by using the most efficient, direct connection from input to logic to output.   
 
 
 * Up to 50% lower total power compared to equivalent density competitive CPLDs, generating less heat and saving battery power.
@@ -162,17 +132,20 @@ Leveraging the successful MAX® II architecture, MAX® V devices combine instant
 * I/Os are hot-socket compliant and support LVTTL, LVCMOS, PCITM, and LVDS output interface standards, along with other bus-friendly options \(e.g. output enable per pin, Schmitt triggers, slew rate control, and others\).
 * The on-chip JTAG block can configure external non-JTAG-compliant devices, such as discrete flash memory devices, using the Parallel Flash Loader IP Megafunction.
 
+
+
  [![apertus](https://www.intel.com/content/dam/www/public/us/en/images/programmable/16x9/maxv-architecture-fig1-16x9.jpg.rendition.intel.web.720.405.jpg?raw=true)](https://www.apertus.org/axiom-beta)   
- The MAX® V CPLD architecture supports MultiVolt I/O functionality, allowing different I/O banks to operate with different I/O voltages to seamlessly connect to other devices. The device core is powered by a single 1.8-V external supply \(VCCINT\), providing CPLD functionality with low dynamic and stand-by power.   
+ 
 
-
-  
-   
- [Datasheet](https://www.st.com/resource/en/datasheet/stm32f103rc.pdf)   
-   
-   
+The MAX® V CPLD architecture supports MultiVolt I/O functionality, allowing different I/O banks to operate with different I/O voltages to seamlessly connect to other devices. The device core is powered by a single 1.8-V external supply \(VCCINT\), providing CPLD functionality with low dynamic and stand-by power.   
    
 
 
-## CPLD \(Complex programmable logic device
+[Datasheet](https://www.st.com/resource/en/datasheet/stm32f103rc.pdf)   
+   
+   
+   
+
+
+
 
