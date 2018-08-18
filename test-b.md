@@ -2,7 +2,7 @@
 description: Test B Desc
 ---
 
-# Test B
+# Plugin Modules
 
 Test B Text
 
