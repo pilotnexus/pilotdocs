@@ -6,4 +6,5 @@
 * [Case Studies](case-studies.md)
 * [Documentation](documentation.md)
 * [Community](community.md)
+* [Suppliers](suppliers.md)
 
