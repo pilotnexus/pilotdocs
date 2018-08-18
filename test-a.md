@@ -4,13 +4,13 @@ description: Test A Desc
 
 # PiLOT Overview
 
-## Overview
+## Introduction
 
 TODO   
    
 
 
-#### Features
+### Features
 
 * Slots for up to four extension modules, each providing a wide variety of additional functionalities \(see _**\_**_ \).
 * 32 bit ARM microcontroller for real-time operating.
@@ -42,18 +42,25 @@ guarantee of cycle time real-time processing Normally for this PLCs are used \(n
 
 ### MCU \(Microcontroller unit\)
 
-STM32F103RC [MCU](https://en.wikipedia.org/wiki/Microcontroller)   
- The STM32F103xC, STM32F103xD and STM32F103xE performance line family incorporates the high-performance ARM® Cortex®-M3 32-bit RISC core operating at a 72 MHz frequency, high-speed embedded memories \(Flash memory up to 512 Kbytes and SRAM up to 64 Kbytes\), and an extensive range of enhanced I/Os and peripherals connected to two APB buses. All devices offer three 12-bit ADCs, four general-purpose 16-bit timers plus two PWM timers, as well as standard and advanced communication interfaces: up to two I2Cs, three SPIs, two I2Ss, one SDIO, five USARTs, an USB and a CAN.   
- The STM32F103xC/D/E high-density performance line family operates in the –40 to +105 °C temperature range, from a 2.0 to 3.6 V power supply. A comprehensive set of power-saving mode allows the design of low-power applications.   
- These features make the STM32F103xC/D/E high-density performance line microcontroller family suitable for a wide range of applications such as motor drives, application control, medical and handheld equipment, PC and gaming peripherals, GPS platforms, industrial applications, PLCs, inverters, printers, scanners, alarm systems video intercom, and HVAC.  
+STM32F103RC [MCU](https://en.wikipedia.org/wiki/Microcontroller) 
+
+![](.gitbook/assets/stm32f103.jpg)
+
+The STM32F103xC, STM32F103xD and STM32F103xE performance line family incorporates the high-performance ARM® Cortex®-M3 32-bit RISC core operating at a 72 MHz frequency, high-speed embedded memories \(Flash memory up to 512 Kbytes and SRAM up to 64 Kbytes\), and an extensive range of enhanced I/Os and peripherals connected to two APB buses. All devices offer three 12-bit ADCs, four general-purpose 16-bit timers plus two PWM timers, as well as standard and advanced communication interfaces: up to two I2Cs, three SPIs, two I2Ss, one SDIO, five USARTs, an USB and a CAN.   
+
+
+The STM32F103xC/D/E high-density performance line family operates in the –40 to +105 °C temperature range, from a 2.0 to 3.6 V power supply. A comprehensive set of power-saving mode allows the design of low-power applications.   
+
+
+These features make the STM32F103xC/D/E high-density performance line microcontroller family suitable for a wide range of applications such as motor drives, application control, medical and handheld equipment, PC and gaming peripherals, GPS platforms, industrial applications, PLCs, inverters, printers, scanners, alarm systems video intercom, and HVAC.  
   
 
 
 * Core: ARM® 32-bit Cortex®-M3 CPU
 
-  _\*_ 72 MHz maximum frequency, 1.25 DMIPS/MHz \(Dhrystone 2.1\) performance at 0 wait state memory access
+  72 MHz maximum frequency, 1.25 DMIPS/MHz \(Dhrystone 2.1\) performance at 0 wait state memory access
 
-  \*\* Single-cycle multiplication and hardware division
+  Single-cycle multiplication and hardware division
 
 * Memories
 
@@ -142,7 +149,9 @@ STM32F103RC [MCU](https://en.wikipedia.org/wiki/Microcontroller)
 ### CPLD \(Complex programmable logic device\)
 
 Altera Max V [CPLD](https://en.wikipedia.org/wiki/Complex_programmable_logic_device)   
- Leveraging the successful MAX® II architecture, MAX® V devices combine instant-on, non-volatile CPLD characteristics with advanced features typically found in FPGAs, such as phase-locked loops \(PLLs\), on-chip memory, and internal oscillators.   
+
+
+Leveraging the successful MAX® II architecture, MAX® V devices combine instant-on, non-volatile CPLD characteristics with advanced features typically found in FPGAs, such as phase-locked loops \(PLLs\), on-chip memory, and internal oscillators.   
  The MAX V CPLD architecture includes an array of logic elements \(LEs grouped in logic array blocks \(LABs\)\), memory resources \(non-volatile flash and LE RAM\), digital PLLs, global signals \(clocks or control signals\), and a generous amount of user I/Os. The MultiTrack interconnect is designed to maximize performance and minimize power by using the most efficient, direct connection from input to logic to output. Find more details about the MAX® V architecture in the MAX® V Device Family Data Sheet \(PDF\).   
 
 
