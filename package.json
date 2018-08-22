@@ -1,0 +1,32 @@
+{
+  "name": "pilotdocs",
+  "version": "1.0.0",
+  "description": "Pilot Documentation",
+  "main": " ",
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "gitbook-plugin-add-js-css": "0.0.1",
+    "gitbook-plugin-collapsible-menu-ex": "^1.0.4",
+    "gitbook-plugin-styleguide": "^1.1.0",
+    "gitbook-plugin-toggle-chapters": "0.0.3",
+    "gitbook-styleguide": "^7.9.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DAmesberger/pilotdocs.git"
+  },
+  "keywords": [
+    "pilot",
+    "docs"
+  ],
+  "author": "Daniel Amesberger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DAmesberger/pilotdocs/issues"
+  },
+  "homepage": "https://github.com/DAmesberger/pilotdocs#readme"
+}

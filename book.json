@@ -1,17 +1,11 @@
 {
-    "plugins": ["toggle-chapters", "collapsible-menu-ex", "add-js-css", "replace"],
+    "plugins": ["toggle-chapters", "collapsible-menu-ex", "add-js-css"],
     "pluginsConfig": {
         "add-js-css": {
           "js": [
             "./js/pilotdocs.js",
             "./node_modules/gitbook-styleguide/icons/Logo.js"
           ]
-        },
-        "replace": {
-            "substitutes": [
-                {"pattern": ":coffee:", "flags": "g", "substitute": "<i class=\"fa fa-coffee\"></i>"},
-                {"pattern": "<!-- endnopb -->", "flags": "g", "substitute": "</div>"}
-            ]
         }
       }
 }
