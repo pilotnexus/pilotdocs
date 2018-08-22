@@ -1,3 +1,3 @@
 # Getting Started
 
-To get started do that.
+First things first but not necessarily in that order.
