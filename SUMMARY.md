@@ -1,4 +1,11 @@
-# Table of contents
+# Summary
+
+* [Introduction](README.md)
+
+### Getting Started
+
+* [Getting Started](getting-started/README.md)
+  * [Install Pilot-Config](getting-started/install-pilot-config.md)
 
 * [Main Page](README.md)
 * [PiLOT Overview](test-a.md)
