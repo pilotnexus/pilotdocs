@@ -1,11 +1,14 @@
 {
-    "plugins": ["hints", "toggle-chapters", "collapsible-menu", "add-js-css"],
+    "plugins": ["hints", "toggle-chapters", "collapsible-menu", "add-js-css", "mermaid-full"],
     "pluginsConfig": {
         "add-js-css": {
           "js": [
             "./js/pilotdocs.js",
             "./node_modules/gitbook-styleguide/icons/Logo.js"
           ]
-        }
+        },
+        "mermaid-compat": {
+          "theme": "default"
+       }
       }
 }

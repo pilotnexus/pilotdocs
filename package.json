@@ -10,6 +10,7 @@
     "gitbook-plugin-collapsible-menu": "file:_plugins/gitbook-plugin-collapsible-menu",
     "gitbook-plugin-collapsible-menu-ex": "^1.0.4",
     "gitbook-plugin-hints": "^1.0.2",
+    "gitbook-plugin-mermaid-full": "^0.5.1",
     "gitbook-plugin-styleguide": "^1.1.0",
     "gitbook-plugin-toggle-chapters": "0.0.3",
     "gitbook-styleguide": "^7.9.3"

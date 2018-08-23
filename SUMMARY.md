@@ -15,10 +15,16 @@ output:
 
 ### Setup
 
-
 ### Using Pilot
 
+### Modules
+
+* [Overview](docs/modules/module-overview.md)
+* [Which one do I need?](docs/modules/find-module.md)
+
 ### Concepts
+* [Node](docs/concepts/node.md)
+
 
 ### FAQ
 

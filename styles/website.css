@@ -23,8 +23,17 @@ h2, h3, h4 {
 	color: #555;
 }
 
+.subtitle {
+	font-size: 0.7em;
+	color: rgb(158, 166, 173);
+	position: relative;
+	top: -30px;
+	left: 3px;
+	margin-bottom: -30px !important;
+}
+
 p {
-    color: hsla(197,10%,45%,1);
+  color: hsla(197,10%,45%,1);
 }
 p {
     line-height: 1.8;
@@ -4025,7 +4034,7 @@ table {
 }
 
 .markdown-section em {
-    font-style: italic
+	font-weight: 700;
 }
 
 .markdown-section blockquote,
