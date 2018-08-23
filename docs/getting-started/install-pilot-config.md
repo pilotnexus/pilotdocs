@@ -3,7 +3,7 @@ description: Install Pilot Config
 ---
 
 # Getting Started
-<p class="subtitle">Install Tools on the Raspberry Pi and interact with the Hardware</p>
+<p class="sub1">Install Tools on the Raspberry Pi and interact with the Hardware</p>
 
 {% hint style="info" %} You need an SD card with a Raspbian or Ubuntu Mate Image. Look [here](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) if you need help setting up the Operating System.
 {% endhint %}

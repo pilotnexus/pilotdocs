@@ -3,7 +3,7 @@ description: Install PilotNode
 ---
 
 # Getting Started
-<p class="subtitle">Remote access your Raspberry Pi and Pilot-connected Hardware</p>
+<p class="sub1">Remote access your Raspberry Pi and Pilot-connected Hardware</p>
 
 ---
 

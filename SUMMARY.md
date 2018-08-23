@@ -13,10 +13,10 @@ output:
 * [Getting Started](docs/getting-started/README.md)
   * [Install Pilot Config](docs/getting-started/install-pilot-config.md)
   * [Install Pilot Node](docs/getting-started/install-pilotnode.md)
-
-### Setup
+  * [Accessing Module Data](docs/getting-started/access-data.md)
 
 ### Using Pilot
+* [Virtual Filesystem](docs/usage/proc-fs.md)
 
 ### Modules
 

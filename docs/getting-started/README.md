@@ -1,5 +1,5 @@
 # Getting Started
-<p class="subtitle">Get your hardware setup up and running in 10 minutes</p>
+<p class="sub1">Get your hardware setup up and running in 10 minutes</p>
 
 ---
 Before you get started with the Pilot Automation Platform, you need a bit of Hardware:
@@ -13,4 +13,4 @@ To configure the firmware for your modules you need to [install and run pilot-co
 After that you can communicate with your modules using the terminal.
 
 ### 2. Monitor and Control from Anywhere
-If you want to connect it to the cloud and monitor/remote control the Rasbperry Pi with the App or the Pilot API, you need to [install pilotnode]().
+If you want to connect it to the cloud and monitor/remote control the Rasbperry Pi with the App or the Pilot API, you need to [install pilotnode](/docs/getting-started/install-pilotnode.md).
