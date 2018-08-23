@@ -1,5 +1,5 @@
 # Module Overview
-<p class="subtitle">Available Modules and how to use them</p>
+<p class="sub1">Available Modules and how to use them</p>
 
 ---
 

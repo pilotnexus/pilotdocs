@@ -3572,7 +3572,7 @@ table {
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
     position: relative;
-    font-size: 14px
+    font-size: 14px;
 }
 
 .book-header .btn:hover {

@@ -3,7 +3,7 @@ title: "Product Overview"
 ---
 
 # Product Overview
-<p class="subtitle">About the Pilot Automation Platform and how to get started</p>
+<p class="sub1">About the Pilot Automation Platform and how to get started</p>
 
 ---
 
