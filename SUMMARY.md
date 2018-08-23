@@ -11,7 +11,8 @@ output:
 ### Getting Started
 * [Product Overview](README.md)
 * [Getting Started](docs/getting-started/README.md)
-  * [Install Pilot-Config](docs/getting-started/install-pilot-config.md)
+  * [Install Pilot Config](docs/getting-started/install-pilot-config.md)
+  * [Install Pilot Node](docs/getting-started/install-pilotnode.md)
 
 ### Setup
 
