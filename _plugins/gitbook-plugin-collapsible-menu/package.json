@@ -1,0 +1,59 @@
+{
+  "_from": "gitbook-plugin-collapsible-menu@^1.0.4",
+  "_id": "gitbook-plugin-collapsible-menu@1.0.4",
+  "_inBundle": false,
+  "_integrity": "sha512-O+xz6jEdN6mz615ztKpnZmC1y2HkFDYZmBHmiEcqxAX2OjROveUppLHjMojA0hLNNga9QLJVMSdjpo8spmOUDQ==",
+  "_location": "/gitbook-plugin-collapsible-menu",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "gitbook-plugin-collapsible-menu@^1.0.4",
+    "name": "gitbook-plugin-collapsible-menu",
+    "escapedName": "gitbook-plugin-collapsible-menu",
+    "rawSpec": "^1.0.4",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.4"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/gitbook-plugin-collapsible-menu/-/gitbook-plugin-collapsible-menu-1.0.4.tgz",
+  "_shasum": "7daebb195d1c28a6d2277e77a2bc13615fd04b05",
+  "_spec": "gitbook-plugin-collapsible-menu@^1.0.4",
+  "_where": "/home/amd/work/pilot/pilotdocs",
+  "author": {
+    "name": "HISAME SHIZUMARU"
+  },
+  "bugs": {
+    "url": "https://github.com/cyqresig/gitbook-plugin-collapsible-menu/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "HISAME SHIZUMARU",
+      "email": "moonsunfall@aliyun.com"
+    }
+  ],
+  "deprecated": false,
+  "description": "GitBook Plugin to change sidebar menu's to collapsible menu. For gitbook with many pages, navigating long menus can get irritating.",
+  "engines": {
+    "gitbook": "*"
+  },
+  "homepage": "https://github.com/cyqresig/gitbook-plugin-collapsible-menu",
+  "keywords": [
+    "gitbook",
+    "plugin",
+    "collapsible-menu",
+    "menu",
+    "github"
+  ],
+  "license": "Apache 2",
+  "main": "index.js",
+  "name": "gitbook-plugin-collapsible-menu",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cyqresig/gitbook-plugin-collapsible-menu.git"
+  },
+  "version": "1.0.4"
+}

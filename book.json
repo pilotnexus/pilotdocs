@@ -1,5 +1,5 @@
 {
-    "plugins": ["toggle-chapters", "collapsible-menu-ex", "add-js-css"],
+    "plugins": ["hints", "toggle-chapters", "collapsible-menu", "add-js-css"],
     "pluginsConfig": {
         "add-js-css": {
           "js": [

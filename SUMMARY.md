@@ -7,23 +7,32 @@ output:
 
 # Summary
 
-* [Introduction](README.md)
 
 ### Getting Started
+* [Product Overview](README.md)
+* [Getting Started](docs/getting-started/README.md)
+  * [Install Pilot-Config](docs/getting-started/install-pilot-config.md)
 
-* [Getting Started](getting-started/README.md)
-  * [Install Pilot-Config](getting-started/install-pilot-config.md)
-
-### :mobile: App
-* [Install Pilot Cockpit](getting-started/README.md)
+### Setup
 
 
-* [Main Page](README.md)
-* [PiLOT Overview](test-a.md)
-* [Plugin Modules](test-b.md)
-* [Case Studies](case-studies.md)
-* [Documentation](documentation.md)
-* [Community](community.md)
-* [Suppliers](suppliers.md)
-* [Contact](contact.md)
+### Using Pilot
+
+### Concepts
+
+### FAQ
+
+### SDK/API Reference
+
+### {i|class="fa fa-mobile" style=""|} App
+
+---
+
+* [PiLOT Overview](docs/test-a.md)
+* [Plugin Modules](docs/test-b.md)
+* [Case Studies](docs/case-studies.md)
+* [Documentation](docs/documentation.md)
+* [Community](docs/community.md)
+* [Suppliers](docs/suppliers.md)
+* [Contact](docs/contact.md)
 
