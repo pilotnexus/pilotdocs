@@ -8,7 +8,7 @@
     "font-awesome": "^4.7.0",
     "font-proxima-nova": "^1.0.1",
     "gitbook-plugin-add-js-css": "0.0.1",
-    "gitbook-plugin-bootstrapjs": "file:_plugins/gitbook-plugin-bootstrapjs",
+    "gitbook-plugin-pilot": "file:_plugins/gitbook-plugin-pilot",
     "gitbook-plugin-collapsible-menu": "file:_plugins/gitbook-plugin-collapsible-menu",
     "gitbook-plugin-collapsible-menu-ex": "^1.0.4",
     "gitbook-plugin-hints": "^1.0.2",
@@ -16,7 +16,8 @@
     "gitbook-plugin-styleguide": "^1.1.0",
     "gitbook-plugin-toggle-chapters": "0.0.3",
     "gitbook-styleguide": "^7.9.3",
-    "popper.js": "^1.14.4"
+    "popper.js": "^1.14.4",
+    "xmlhttprequest": "^1.8.0"
   },
   "devDependencies": {
     "browserify": "^16.2.2",

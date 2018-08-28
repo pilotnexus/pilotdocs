@@ -2,9 +2,16 @@
  * @param {String} html
  * @return {String} HTML wrapped in a hint container
  */
+
+// var moduletemplate = require('./module-template.html');
+
 function wrapInContainer(html) {
     return '<div class="hints-container">'+html+'</div>';
 }
+
+const fs = require('fs');
+const os = require('os');
+const path = require('path');
 
 module.exports = {
     book: {
@@ -24,7 +31,7 @@ module.exports = {
                 return this
                     .renderBlock('markdown', block.body)
                     .then(function(renderedBody) {
-                        return '<div>this is my plugin</div>';
+                        return renderedBody + fs.readFileSync(path.join(__dirname, '/module-template.html'), 'utf-8').replace('{{svg}}',svg);
                     });
             }
         }
