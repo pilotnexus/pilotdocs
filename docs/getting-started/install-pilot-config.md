@@ -30,6 +30,8 @@ Pilot-Config is a tool that sets up your Rapberry Pi as a Node and installs the 
 
 # Troubleshooting
 
+yuyuy
+
 ## Linux Driver
 
 Please check that your Raspberry Pi runs a supported kernel version. You can check this by running `uname -a` in the Terminal. You should get a response similar to this:
