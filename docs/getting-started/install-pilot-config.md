@@ -19,11 +19,11 @@ Pilot-Config is a tool that sets up your Rapberry Pi as a Node and installs the 
   `sudo -H pip3 install pilot-config`
 
 2. Run:
-  `sudo pilot-config`
+  `sudo pilot`
 
 3. If you are running the tool for the first time, drivers are installed and a reboot is required.
 
-4. After reboot, re-run sudo pilot-config
+4. After reboot, re-run sudo pilot
   Log in with your user credentials.
   Inserted boards should be automatically detected and you can build and install the firmware for it. 
 

@@ -21,7 +21,9 @@ output:
 ### Modules
 
 * [Overview](docs/modules/module-overview.md)
+  * [8 Output Module](docs/modules/o8.md)
 * [Which one do I need?](docs/modules/find-module.md)
+
 
 ### Concepts
 * [Node](docs/concepts/node.md)

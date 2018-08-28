@@ -3,7 +3,7 @@ title: "Accessing Module Data"
 ---
 
 # Accessing Module Data
-<p class="subtitle">You have run pilot-config and configured the pilot Firmware, now it is time for some action.</p>
+<p class="sub1">You have run pilot-config and configured the pilot Firmware, now it is time for some action.</p>
 
 ---
 
