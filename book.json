@@ -1,5 +1,5 @@
 {
-    "plugins": ["hints", "toggle-chapters", "collapsible-menu", "add-js-css", "mermaid-full"],
+    "plugins": ["hints", "toggle-chapters", "collapsible-menu", "add-js-css", "mermaid-full", "pilot"],
     "pluginsConfig": {
         "add-js-css": {
           "js": [
