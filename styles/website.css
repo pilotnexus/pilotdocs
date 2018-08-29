@@ -84,10 +84,8 @@ p {
     stroke-width: 2;
 	stroke-linecap: round;
     font-weight: 500;
-}
-.pin.desc {
     cursor: pointer;
-} 
+}
 
 .pin.active { 
     stroke-width: 5;

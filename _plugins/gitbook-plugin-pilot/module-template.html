@@ -7,7 +7,7 @@
         <template v-for="(configgroup, key, index) in configurations">
           <li class="dropdown-header" v-html="configgroup.title"></li>
           <template v-for="(config, cfgkey, index) in configgroup">
-          <li v-html="config.title" v-on:click="setConfig(key, cfgkey)" class="pin" v-bind:class="{'selected': cfgkey==selectedconfig}"></li>
+          <li v-html="config.title" v-on:click="setConfig(key, cfgkey, config.settings)" class="pin" v-bind:class="{'selected': cfgkey==selectedconfig}"></li>
           </template>
         </template>
         </ul>
@@ -36,6 +36,7 @@
             <div v-html="pins[key].description[selectedconfig] ? pins[key].description[selectedconfig] : pins[key].description.default"></div>
         </div>
     </template>
+    <div v-if="selectedpin == -1" class="alert alert-info hints-alert">Click on a Pin to show the description.</div>
     
     </div>
     
@@ -57,6 +58,18 @@
             }
         }
         });
+
+        var ConfigComponent = Vue.extend({
+        template: `<rect v-bind:visibility="$parent.selectedconfigsettings.indexOf(this.confignr) != -1 ? 'visible' : 'collapse'"/>`,
+        props: ['confignr'],
+        methods : {
+            emitter: function(ev) {
+                bus.$emit(ev,this.pinnr);
+                //console.log(`ev: ${ev} selectedpin ${this.$parent.selectedpin}, activepin ${this.$parent.activepin}`);
+            }
+        }
+        });
+
     
         var app = new Vue({
       el: '#app',
@@ -65,13 +78,15 @@
             selectedpin: -1,
             selectedconfiggroup: 'external',
             selectedconfig: 'default',
+            selectedconfigsettings: [],
             pins,
             configurations
       },
       methods: {
-        setConfig: function(cfggroup, config) {
+        setConfig: function(cfggroup, config, settings) {
             this.selectedconfiggroup = cfggroup;
             this.selectedconfig = config;
+            this.selectedconfigsettings = settings;
             //console.log('config set to ' + config + ' ' + cfggroup);
         // do stuff
         }
@@ -82,16 +97,29 @@
         var replacepaths = function() {
             var doc = obj.getSVGDocument();
             if (doc) {
-                let spans =  doc.querySelectorAll("[pin]");
-                if (spans) {
-                    for (let i = 0; i < spans.length; i++) {
+                let pins =  doc.querySelectorAll("[pin]");
+                if (pins) {
+                    for (let i = 0; i < pins.length; i++) {
                     var component = new PinComponent({
-                        propsData: { pinnr: spans[i].getAttribute('pin') },
+                        propsData: { pinnr: pins[i].getAttribute('pin') },
                         parent: that
                     }).$mount();
-                    component.$el.setAttribute("d", spans[i].getAttribute("d"));
+                    component.$el.setAttribute("d", pins[i].getAttribute("d"));
                     //let pin = el.getAttribute('pin');
-                    spans[i].parentNode.replaceChild(component.$el, spans[i]);
+                    pins[i].parentNode.replaceChild(component.$el, pins[i]);
+                    }
+                }
+                let configs =  doc.querySelectorAll("[config]");
+                if (configs) {
+                    for (let i = 0; i < configs.length; i++) {
+                    var component = new ConfigComponent({
+                        propsData: { confignr: configs[i].getAttribute('config') },
+                        parent: that
+                    }).$mount();
+                    $(configs[i].attributes).each(function() {
+                        component.$el.setAttribute(this.name, this.value);
+                    });
+                    configs[i].parentNode.replaceChild(component.$el, configs[i]);
                     }
                 }
             }
