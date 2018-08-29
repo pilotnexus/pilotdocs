@@ -48,29 +48,7 @@
         
         var bus = new Vue({});
     
-        var PinComponent = Vue.extend({
-        template: `<path v-on:click="emitter('click')" v-on:mouseover="emitter('hover')" v-on:mouseout="emitter('unhover')" v-bind:fill="this.pinnr == $parent.activepin || this.pinnr == $parent.selectedpin ? '#008cff' : 'rgb(153, 153, 153);'"/>`,
-        props: ['pinnr', 'activepin', 'selectedpin'],
-        methods : {
-            emitter: function(ev) {
-                bus.$emit(ev,this.pinnr);
-                //console.log(`ev: ${ev} selectedpin ${this.$parent.selectedpin}, activepin ${this.$parent.activepin}`);
-            }
-        }
-        });
 
-        var ConfigComponent = Vue.extend({
-        template: `<rect v-bind:visibility="$parent.selectedconfigsettings.indexOf(this.confignr) != -1 ? 'visible' : 'collapse'"/>`,
-        props: ['confignr'],
-        methods : {
-            emitter: function(ev) {
-                bus.$emit(ev,this.pinnr);
-                //console.log(`ev: ${ev} selectedpin ${this.$parent.selectedpin}, activepin ${this.$parent.activepin}`);
-            }
-        }
-        });
-
-    
         var app = new Vue({
       el: '#app',
       data: {
@@ -100,6 +78,16 @@
                 let pins =  doc.querySelectorAll("[pin]");
                 if (pins) {
                     for (let i = 0; i < pins.length; i++) {
+                    var PinComponent = Vue.extend({
+                    template: `<${pins[i].nodeName} v-on:click="emitter('click')" v-on:mouseover="emitter('hover')" v-on:mouseout="emitter('unhover')" v-bind:fill="this.pinnr == $parent.activepin || this.pinnr == $parent.selectedpin ? '#008cff' : 'rgb(153, 153, 153);'"/>`,
+                    props: ['pinnr', 'activepin', 'selectedpin'],
+                    methods : {
+                        emitter: function(ev) {
+                            bus.$emit(ev,this.pinnr);
+                            //console.log(`ev: ${ev} selectedpin ${this.$parent.selectedpin}, activepin ${this.$parent.activepin}`);
+                        }
+                    }
+                    });
                     var component = new PinComponent({
                         propsData: { pinnr: pins[i].getAttribute('pin') },
                         parent: that
@@ -112,6 +100,16 @@
                 let configs =  doc.querySelectorAll("[config]");
                 if (configs) {
                     for (let i = 0; i < configs.length; i++) {
+                    var ConfigComponent = Vue.extend({
+                    template: `<${configs[i].nodeName} v-bind:visibility="$parent.selectedconfigsettings.indexOf(this.confignr) != -1 ? 'visible' : 'collapse'"/>`,
+                    props: ['confignr'],
+                    methods : {
+                        emitter: function(ev) {
+                            bus.$emit(ev,this.pinnr);
+                            //console.log(`ev: ${ev} selectedpin ${this.$parent.selectedpin}, activepin ${this.$parent.activepin}`);
+                        }
+                    }
+                    });
                     var component = new ConfigComponent({
                         propsData: { confignr: configs[i].getAttribute('config') },
                         parent: that
