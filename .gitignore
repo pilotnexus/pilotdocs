@@ -1,3 +1,4 @@
 Makefile
 _book/
 node_modules/
+.gitbook/assets/modules/original/
