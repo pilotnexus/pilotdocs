@@ -51,6 +51,6 @@ deploy_pods:
     - mv ./kubectl /usr/local/bin/kubectl
     - mkdir ~/.kube
     - cp $KUBECONFIG ~/.kube/config
-    - kubectl replace --force -f deploy/pilotcockpit-deployment.yaml
+    - kubectl replace --force -f deploy/pilotdocs-deployment.yaml
   dependencies:
     - create_image
