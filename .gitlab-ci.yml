@@ -1,0 +1,56 @@
+stages:
+  - build
+  - image
+  - deploy
+
+# This folder is cached between builds
+cache:
+  paths:
+  - node_modules/
+
+build:
+  image: node:8.11.4-alpine
+  stage: build
+  script:
+    - apk update && apk add git
+    - npm install
+    - npm install -g gitbook-cli
+    - gitbook build
+  artifacts:
+    paths:
+     - _book/
+
+#needs privileged=true in /etc/gitlab-runner/config.toml or --docker-privileged=true
+create_image:
+  stage: image
+  image: docker:latest
+  services:
+    - docker:dind
+  variables:
+    DOCKER_DRIVER: overlay
+  before_script:
+    - echo "build token $CI_BUILD_TOKEN"
+    - echo "registry $CI_REGISTRY"
+    - docker login -u gitlab-ci-token -p "$CI_BUILD_TOKEN" "$CI_REGISTRY"
+
+  script:
+    - docker build -t "$CI_REGISTRY_IMAGE:production" .
+    - docker push "$CI_REGISTRY_IMAGE:production"
+#  only:
+#    - tags
+
+deploy_pods:
+  stage: deploy
+  environment:
+    name: Dev
+  image: alpine
+  script:
+    - apk add --no-cache curl
+    - curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+    - chmod +x ./kubectl
+    - mv ./kubectl /usr/local/bin/kubectl
+    - mkdir ~/.kube
+    - cp $KUBECONFIG ~/.kube/config
+    - kubectl replace --force -f deploy/pilotcockpit-deployment.yaml
+  dependencies:
+    - create_image
