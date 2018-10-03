@@ -1,0 +1,21 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: pilotdocs
+  namespace: default
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: pilotdocs
+        tier: backend
+    spec:
+      containers:
+        - name: app
+          image: gitlab.amescon.com:5005/amd/pilotdocs:production
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+      imagePullSecrets:
+        - name: regcred

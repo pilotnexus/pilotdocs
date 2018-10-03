@@ -25,6 +25,8 @@ output:
   * [8 Input Module](docs/modules/i8.md)
 * [Which one do I need?](docs/modules/find-module.md)
 
+### Building custom firmware code
+* [Overview](docs/firmware/build-overview.md)
 
 ### Concepts
 * [Node](docs/concepts/node.md)
