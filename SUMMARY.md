@@ -15,36 +15,49 @@ output:
   * [Install Pilot Node](docs/getting-started/install-pilotnode.md)
   * [Accessing Module Data](docs/getting-started/access-data.md)
 
+
+### Hardware
+
+
+* [Pilot Nexus](docs/Hardware/Modules/Find_Module.md)
+  * [Features](docs/Hardware/Pilot_Nexus/Features.md)
+* [Key components](docs/Hardware/Modules/Module_Overview.md)
+  * [MCU (Microcontroller unit)](docs/Hardware/Pilot_Nexus/Key_Components/MCU.md)
+  * [CPLD (Complex programmable logic device)](docs/Hardware/Pilot_Nexus/Key_Components/CPLD.md)
+* [Plugin Modules](docs/Hardware/Modules/Module_Overview.md)
+  * [8 Analog Isolated Inputs](docs/Hardware/Modules/8_Analog_Isolated_Inputs.md)
+  * [8 Analog Inputs](docs/Hardware/Modules/8_Analog_Inputs.md)
+  * [8 Digital Inputs](docs/Hardware/Modules/8_Digital_Inputs.md)
+  * [8 Digital Outputs](docs/Hardware/Modules/8_Digital_Outputs.md)
+  * [GPS](docs/Hardware/Modules/GPS.md)
+  * [GSM](docs/Hardware/Modules/GSM.md)
+  * [Profibus](docs/Hardware/Modules/Profibus.md)
+  * [RS-232](docs/Hardware/Modules/RS-232.md)
+  * [RS-485](docs/Hardware/Modules/RS-485.md)
+  * [1-Wire](docs/Hardware/Modules/1-Wire.md)
+  * [9 Axis Sensor](docs/Hardware/Modules/o8.md)
+  * [Sharp Memory LCD](docs/Hardware/Modules/o8.md)
+  * [Sharp Memory LCD](docs/Hardware/Modules/o8.md)
+  * [Sharp Memory LCD](docs/Hardware/Modules/o8.md)
+  * [Sharp Memory LCD](docs/Hardware/Modules/o8.md)
+  * [Sharp Memory LCD](docs/Hardware/Modules/o8.md)
+  * [Sharp Memory LCD](docs/Hardware/Modules/o8.md)
+
+
 ### Using Pilot
 * [Virtual Filesystem](docs/usage/proc-fs.md)
-
-### Modules
-
-* [Overview](docs/modules/module-overview.md)
-  * [8 Output Module](docs/modules/o8.md)
-  * [8 Input Module](docs/modules/i8.md)
-* [Which one do I need?](docs/modules/find-module.md)
-
-### Building custom firmware code
-* [Overview](docs/firmware/build-overview.md)
-
-### Concepts
-* [Node](docs/concepts/node.md)
+* [Tutorials](docs/usage/proc-fs.md)
+  * [Test A](docs/usage/proc-fs.md)
+  * [Test B](docs/usage/proc-fs.md)
+* [SDK/API Reference](docs/usage/proc-fs.md)
 
 
-### FAQ
+### Case Studies
 
-### SDK/API Reference
+### Resources
 
-### {i|class="fa fa-mobile" style=""|} App
+### Suppliers
+
+### Contact
 
 ---
-
-* [PiLOT Overview](docs/test-a.md)
-* [Plugin Modules](docs/test-b.md)
-* [Case Studies](docs/case-studies.md)
-* [Documentation](docs/documentation.md)
-* [Community](docs/community.md)
-* [Suppliers](docs/suppliers.md)
-* [Contact](docs/contact.md)
-
