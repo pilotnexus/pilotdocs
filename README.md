@@ -28,14 +28,14 @@ This SBC extension has been built to encompass a huge range of potential applica
 * Altera CPLD for dynamic wiring and ultra-fast logic.
 * Real-time clock \(CR1025 battery required for RTC\).
 * Open source software and full driver support.
-* Automatically detects and configures all connected devices.
-* 50 mA power consumption.
+* Automatically detects and configures all connected extension modules.
 * Mounting holes for module slots \(M2, screws included\).
 * Optional debugging headers.
 * Cut-out for RaspberryPi display cable.
 * Power indicators.
 * Raspberry Pi aligned mounting holes.
 * Raspberry Pi connector.
+* 50 mA power consumption.
 
 ---
 
