@@ -2,29 +2,31 @@
 
 {% module svg="i8.svg" %}
 <script>
-var pin_default_desc = 'Input Pins. Maximum current: 350mA. When all outputs are on simultanously, a current limit of 100mA should be respected.'
+var pin_default_desc = 'Input Pins '
 var pins = {
     "1": {title: 'Power (+)', direction: {default: 'in', v5: 'out', v24: 'out'}, description: {
-        default: 'The output voltage is set by the voltage you supply to this pin. In this jumper configuration, you need to supply bewtween 5 and 48V to this pin.',
-        v5: 'In this jumper configuration, power is supplied from the internal 5V rail. You can source 5V from this pin, but keep in mind that current capability is limited. <div class="alert alert-danger hints-alert">Do not connect this pin to a power source when using this jumper configuration, magic smoke could escape!</div>',
-        v24: 'In this jumper configuration, power is supplied from the internal 24V rail. <div class="alert alert-info hints-alert">You need a Pilot Mainboard with internal 24V supply. The default version does not support this.</div>'
+        default: 'The maximum input voltage is set by the voltage you supply to this pin. In this jumper configuration, you need to supply bewtween 5 and 30V to this pin.',
+        v5: 'In this jumper configuration, the internal 5V rail is used as a reference. <div class="alert alert-danger hints-alert">Do not connect this pin to a power source when using this jumper configuration, magic smoke could escape!</div>',
+        v24: 'In this jumper configuration, the internal 24V rail is used a a reference. <div class="alert alert-info hints-alert">You need a Pilot Mainboard with internal 24V supply. The default version does not support this.</div>'
     }},
     "2": {title: 'GND (-)', direction: '', description: {
         default: 'Ground Pin. Connect this pin to the ground pin of your system.'
     }},
-    "3": {title: 'Output 1', direction: { default: 'out' }, description: {default:  pin_default_desc} },
-    "4": {title: 'Output 2', direction: { default: 'out' }, description: {default:  pin_default_desc} },
-    "5": {title: 'Output 3', direction: { default: 'out' }, description: {default:  pin_default_desc} },
-    "6": {title: 'Output 4', direction: { default: 'out' }, description: {default:  pin_default_desc} },
-    "7": {title: 'Output 5', direction: { default: 'out' }, description: {default:  pin_default_desc} },
-    "8": {title: 'Output 6', direction: { default: 'out' }, description: {default:  pin_default_desc} },
-    "9": {title: 'Output 7', direction: { default: 'out' }, description: {default:  pin_default_desc} },
-    "10": {title: 'Output 8', direction: { default: 'out' }, description: {default: pin_default_desc} }
+    "3": {title:  'Input 1', direction: { default: 'in' }, description: {default:  pin_default_desc} },
+    "4": {title:  'Input 2', direction: { default: 'in' }, description: {default:  pin_default_desc} },
+    "5": {title:  'Input 3', direction: { default: 'in' }, description: {default:  pin_default_desc} },
+    "6": {title:  'Input 4', direction: { default: 'in' }, description: {default:  pin_default_desc} },
+    "7": {title:  'Input 5', direction: { default: 'in' }, description: {default:  pin_default_desc} },
+    "8": {title:  'Input 6', direction: { default: 'in' }, description: {default:  pin_default_desc} },
+    "9": {title:  'Input 7', direction: { default: 'in' }, description: {default:  pin_default_desc} },
+    "10": {title: 'Input 8', direction: { default: 'in' }, description: {default: pin_default_desc} }
 };
+
+var selectedconfiggroup = null
 var configurations = {
                 external: {
                     title: 'External Power',
-                    default: { title: '5-48V', shortdesc: 'External Power Mode', settings: [] },
+                    default: { title: '5-30V', shortdesc: 'External Power Mode', settings: [] },
                 },
                 internal: {
                     title: 'Internal Power',
