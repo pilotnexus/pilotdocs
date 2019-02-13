@@ -87,3 +87,5 @@ The folder contains the following files:
 <p class="sub3">/proc/pilot/plc</p>
 
 This folder contains PLC related information and provides you with a powerful way to interact with PLC variables.
+
+TODO: what is PLC ?!

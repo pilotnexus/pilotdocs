@@ -76,7 +76,7 @@ TODO
 
 
 
-## PiLOT Ctrl Profibus Plugin Module
+## Pilot Profibus Plugin Module
 
 TODO
 
