@@ -76,10 +76,16 @@
             configurations
       },
       methods: {
-        setConfig: function(cfggroup, config, settings,wiring) {
+        setConfig: function(cfggroup, config, settings, wiring) {
             this.selectedconfiggroup = cfggroup;
             this.selectedconfig = config;
             this.selectedconfigsettings = settings;
+       
+
+
+       console.log('config set to ' + config + ' ' + cfggroup + ' ' + wiring);
+
+
 
             //enable the wiring d iagrams for the selected configuration
             var activeWirings = document.getElementsByClassName("wiring isActive"); 
@@ -93,8 +99,7 @@
 
 
 
-            //console.log('config set to ' + config + ' ' + cfggroup);
-        // do stuff
+ 
         }
       },
       mounted: function() {
