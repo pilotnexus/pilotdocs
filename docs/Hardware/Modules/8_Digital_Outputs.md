@@ -67,16 +67,23 @@ var pins = {
     "9": {title: 'Output 7', direction: { default: 'out' }, description: {default:  pin_default_desc} },
     "10": {title: 'Output 8', direction: { default: 'out' }, description: {default: pin_default_desc} }
 };
+
+var selectedconfiggroup = null
 var configurations = {
                 external: {
                     title: 'External Power',
-                    default: { title: '5-48V', shortdesc: 'External Power Mode', settings: [] },
+                    default: { title: '5-48V', shortdesc: 'External Power Mode', settings: [], wiring: ['o8_default'] },
                 },
                 internal: {
                     title: 'Internal Power',
-                    v5: { title: '5V',  shortdesc: 'Internal 5V Power Mode', settings: ['2']},
-                    v24: { title: '24V', shortdesc: 'Internal 24V Power Mode', settings: ['1','3']}
+                    v5: { title: '5V',  shortdesc: 'Internal 5V Power Mode', settings: ['2'], wiring: ['o8_5v']},
+                    v24: { title: '24V', shortdesc: 'Internal 24V Power Mode', settings: ['1','3'],  wiring: ['o8_24v']}
                 }
             }
 </script>
 {% endmodule %}
+
+### Wiring examples
+<div id="o8_default" class="wiring isActive"><img src="/.gitbook/assets/wiring/o8_external.svg" /></div>
+<div id="o8_5v" class="wiring"><img src="/.gitbook/assets/wiring/o8_5v.svg" /></div>
+<div id="o8_24v" class="wiring"><img src="/.gitbook/assets/wiring/o8_24v.svg" /></div>
