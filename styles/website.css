@@ -120,6 +120,18 @@ polyline.pin-dir-in, polyline.pin-dir-out {
 
 
 
+
+
+
+.wiring {
+    display: none;
+}
+.wiring.isActive{
+    display: block;
+}
+
+
+
 /*
  * Theme 1
  */
