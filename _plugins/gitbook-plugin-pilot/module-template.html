@@ -1,5 +1,5 @@
 <div id="app">
-    <div class="dropdown">
+    <div v-if="selectedconfiggroup!=='none'" class="dropdown">
         <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
         <span v-html="configurations[selectedconfiggroup][selectedconfig]['shortdesc']"></span>
         <span class="caret"></span></button>
@@ -47,14 +47,29 @@
         //});
         
         var bus = new Vue({});
-    
+
+        if (!selectedconfiggroup)
+        {
+            selectedconfiggroup = 'external'
+        }
+        
+        if (!configurations) {
+            selectedconfiggroup = 'none'
+            configurations = {
+                none: {
+                    title: '',
+                    default: { title: '', shortdesc: '', settings: [] },
+                }
+            }
+
+        }
 
         var app = new Vue({
       el: '#app',
       data: {
             activepin: -1,
             selectedpin: -1,
-            selectedconfiggroup: 'external',
+            selectedconfiggroup,
             selectedconfig: 'default',
             selectedconfigsettings: [],
             pins,

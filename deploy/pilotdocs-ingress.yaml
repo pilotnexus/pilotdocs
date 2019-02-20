@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: pilotdocs
+  annotations:
+    traefik.ingress.kubernetes.io/frontend-entry-points: http,https
+    traefik.ingress.kubernetes.io/redirect-entry-point: https
+spec:
+  rules:
+  - host: docs.pilotnexus.io
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: pilotdocs
+          servicePort: 80
