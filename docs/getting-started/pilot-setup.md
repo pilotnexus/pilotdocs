@@ -33,10 +33,20 @@ $ sudo pilot setup
 It will display a list of attached modules that might look like this:
 
 
-TODO INSERT PILOT SETUP SCREEN WITH MODULES
+![alt text](/images/pilotsetup/pilotsetup.png "sudo pilot setup")
 
 You are all setup and ready to build your application.
 
-If you want to connect to the pilot cloud make sure to ..
 
-TODO pilotnode setup details here 
+
+Depending on the module you inserted, there is further information available by typing:
+
+``` bash
+$ pilot module
+```
+
+![alt text](/images/pilotsetup/pilotmodule.png "pilot module")
+
+
+
+If you want to connect to the pilot cloud make sure to [*setup pilotnode*](/docs/getting-started/pilot-node-setup.md).
