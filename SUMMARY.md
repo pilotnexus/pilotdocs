@@ -19,9 +19,6 @@ output:
 
 
 ### Hardware
-
-
-
 * [Modules](docs/Hardware/Modules/Module_Overview.md)
   * [4 Digital Inputs 4 Digital Outputs Demo Module](docs/Hardware/Modules/4_in_4_out.md)
   * [8 Digital Inputs](docs/Hardware/Modules/8_Digital_Inputs.md)
@@ -39,20 +36,9 @@ output:
   * [CPLD (Complex programmable logic device)](docs/Hardware/Pilot_Nexus/Key_Components/CPLD.md)
 
 
-### Using Pilot
-* [Virtual Filesystem](docs/usage/proc-fs.md)
-* [Tutorials](docs/usage/proc-fs.md)
-  * [Test A](docs/usage/proc-fs.md)
-  * [Test B](docs/usage/proc-fs.md)
-* [SDK/API Reference](docs/usage/proc-fs.md)
 
+### Contact 
 
-### Case Studies
-
-### Resources
-
-### Suppliers
-
-### Contact
+* [Contact](docs/contact.md)
 
 ---
