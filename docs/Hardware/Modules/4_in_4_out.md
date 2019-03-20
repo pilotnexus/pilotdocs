@@ -16,9 +16,7 @@ TODO insert correct picture
 ### Pinout
 
 
-TODO insert correct .svg
-
-{% module svg="o8.svg" %}
+{% module svg="4in4out.svg" %}
 <script>
 var pin_default_desc_i = 'Input pin. To be used with the internally provided 5V on the Power pin (0)'
 var pin_default_desc_o = 'Output pin. Maximum current: 100mA. When all outputs are on simultanously, a current limit of 100mA should be respected.'

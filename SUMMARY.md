@@ -36,6 +36,13 @@ output:
   * [CPLD (Complex programmable logic device)](docs/Hardware/Pilot_Nexus/Key_Components/CPLD.md)
 
 
+### Example Usecases
+* [4 Digital Inputs 4 Digital Outputs Demo Module](docs/Hardware/Modules/usecases/4_in_4_out/overview.md)
+ * [Blinking leds](/docs/Hardware/Modules/usecases/4_in_4_out/blink_leds.md)
+ * [Reading buttons](/docs/Hardware/Modules/usecases/4_in_4_out/read_buttons.md)
+ * [Reading Input pins](/docs/Hardware/Modules/usecases/4_in_4_out/read_input.md)
+ * [Set Output pins](/docs/Hardware/Modules/usecases/4_in_4_out/set_output.md)
+
 
 ### Contact 
 
