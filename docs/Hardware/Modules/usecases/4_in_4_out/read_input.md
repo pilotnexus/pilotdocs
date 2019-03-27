@@ -1,5 +1,18 @@
 ### Example for the Demoboard - Reading the 4 INPUT pins
 
+#### Prerequisites
+
+First make sure the board is properly attached to the pilot mainboard.
+You may use screws to make sure the board will be 100% accurateley in place.
+
+
+#### Basics
+
+The board comes with 8 leds, of which 4 can be controlled in sofware diectly from your single board computer.
+
+The leds are attached to the 4 OUTPUT pins labeled O0 to O3
+
+To switch on the led connected to O0 you need to enable the GPIO chip pin and write a positive value to the output filedescriptor.
 
 The module exposes 10 Pins
 
@@ -11,6 +24,9 @@ So you can either trigger some event with external inouts or with a button press
 
 Those 4 Pins can be used to attch custom buttons or other triggers like reed contacts, pir sensors or other external electronics.
 
+
+#### Setup
+
 To configure the inputs you need to enable the GPIOs the same way you would enable the 4 buttons.
 
 When the module is plugged in slot 1 the GPIO offset for the outputs is 55
@@ -19,6 +35,11 @@ When the module is plugged in slot 1 the GPIO offset for the outputs is 55
 	echo 56 > /sys/class/gpio/export  
 	echo 57 > /sys/class/gpio/export  
 	echo 58 > /sys/class/gpio/export 
+
+
+
+#### Usage
+
 
 Now the 4 INPUT pins are available on the Linux host.
 

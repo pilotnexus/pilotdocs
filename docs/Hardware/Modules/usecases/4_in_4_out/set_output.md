@@ -1,8 +1,23 @@
 ### Example for the Demoboard - Using the 4 OUTPUT pins
 
+
+
+#### Prerequisites
+
+First make sure the board is properly attached to the pilot mainboard.
+You may use screws to make sure the board will be 100% accurateley in place.
+
+
+#### Basics
+
 The board comes with 4 OUTPUT pins.
 They are labeled O0,O1,O2 and O3
 
+
+
+
+
+#### Setup
 
 To switch on the pins you need to enable the GPIO chip and write a positive value to the output filedescriptor.
 
@@ -22,6 +37,7 @@ Next we must define them as outputs
     echo out > /sys/class/gpio/gpio61/direction
     echo out > /sys/class/gpio/gpio62/direction
 
+#### Usage
 
 Now we can turn the pin on
 

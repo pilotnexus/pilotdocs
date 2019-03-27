@@ -21,12 +21,23 @@ output:
 ### Hardware
 * [Modules](docs/Hardware/Modules/Module_Overview.md)
   * [4 Digital Inputs 4 Digital Outputs Demo Module](docs/Hardware/Modules/4_in_4_out.md)
+    * [Blinking Leds](/docs/Hardware/Modules/usecases/4_in_4_out/blink_leds.md)
+    * [Reading Buttons](/docs/Hardware/Modules/usecases/4_in_4_out/read_buttons.md)
+    * [Reading Inputpins](/docs/Hardware/Modules/usecases/4_in_4_out/read_input.md)
+    * [Set Outputpins](/docs/Hardware/Modules/usecases/4_in_4_out/set_output.md)
   * [8 Digital Inputs](docs/Hardware/Modules/8_Digital_Inputs.md)
+    * [Read Input pins](/docs/Hardware/Modules/usecases/8_digital_inputs/read_input.md)
   * [8 Digital Outputs](docs/Hardware/Modules/8_Digital_Outputs.md)
+    * [Write Output pins](/docs/Hardware/Modules/usecases/8_digital_outputs/write_output.md)
   * [8 Analog Inputs](docs/Hardware/Modules/8_Analog_Inputs.md)
+     * [Read Input pins](/docs/Hardware/Modules/usecases/8_analog_inputs/read_input.md) 
   * [9 Axis Sensor](docs/Hardware/Modules/9-Axis.md)  
   * [GPS](docs/Hardware/Modules/GPS.md)
+     * [How to use](/docs/Hardware/Modules/usecases/gps/usage.md) 
   * [GSM](docs/Hardware/Modules/GSM.md)
+       * [Send an SMS](/docs/Hardware/Modules/usecases/gsm/sms.md)  
+       * [Make a voice call](/docs/Hardware/Modules/usecases/gsm/voice.md) 
+       * [Send data over TCP](/docs/Hardware/Modules/usecases/gsm/data.md)              
   * [RS-232](docs/Hardware/Modules/RS-232.md)
   * [RS-485](docs/Hardware/Modules/RS-485.md)
   * [Sharp Memory LCD](docs/Hardware/Modules/Sharp_lcd.md)
@@ -36,12 +47,7 @@ output:
   * [CPLD (Complex programmable logic device)](docs/Hardware/Pilot_Nexus/Key_Components/CPLD.md)
 
 
-### Example Usecases
-* [4 Digital Inputs 4 Digital Outputs Demo Module](docs/Hardware/Modules/usecases/4_in_4_out/overview.md)
- * [Blinking leds](/docs/Hardware/Modules/usecases/4_in_4_out/blink_leds.md)
- * [Reading buttons](/docs/Hardware/Modules/usecases/4_in_4_out/read_buttons.md)
- * [Reading Input pins](/docs/Hardware/Modules/usecases/4_in_4_out/read_input.md)
- * [Set Output pins](/docs/Hardware/Modules/usecases/4_in_4_out/set_output.md)
+
 
 
 ### Contact 

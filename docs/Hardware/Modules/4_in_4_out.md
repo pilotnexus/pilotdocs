@@ -9,9 +9,33 @@ TODO insert correct picture
 
 
 
+---
+
+
+
+
+### Applications
+
+* Demoboard for the pilot nexus to evaluate basic functionality
+* Blink up to 8 LEDs
+* Drive small motors
+* Switch small relays
+* Read 4 buttons
+* Read 4 input pins
+* Drive 4 output pins
 
 
 ---
+
+### Specifications
+
+* 5v Input internal provided voltage
+* 100 mA output current capability per pin
+* 8 Leds for status indication
+* Size: 36.6mm x 29.8mm (1.441in x 1.173in)
+
+---
+
 
 ### Pinout
 
@@ -42,40 +66,11 @@ var selectedconfiggroup = null
 var configurations = null
 </script>
 {% endmodule %}
-
-
-
-
-
-
----
-
-
-
-
-### Applications
-
-* Demoboard for the pilot nexus to evaluate basic functionality
-* Blink up to 8 LEDs
-* Drive small motors
-* Switch small relays
-* Read 4 buttons
-* Read 4 input pins
-* Drive 4 output pins
-
-
----
-
-### Specifications
-
-* 5v Input internal provided voltage
-* 100 mA output current capability per pin
-* 8 Leds for status indication
-* Size: 36.6mm x 29.8mm (1.441in x 1.173in)
+/
 
 ---
 
 
 ### Example usecases
 
-[Example usecases for this module can be found here](/docs/Hardware/Modules/usecases/4_in_4_out/overview.md)
+Check out the subpages on the lefthand menu for examples on what can be done with this module.
