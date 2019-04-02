@@ -34,8 +34,8 @@ First enable the module by running
 
 The module is now enabled and you should be able to communicate with it over the associated serial device.
 
-A full documentation on all available ATcommands is available in the AT commands datasheet for the SIM800 module.
-Warning: its a >300 pages document.
+A full documentation on all available AT commands is available in the AT commands datasheet for the SIM800 module.
+
 You can get a copy [here](/docs/docs/sim800_series_at_command_manual_v1.01.pdf "The AT reference of the SIM800 module") 
 
 
