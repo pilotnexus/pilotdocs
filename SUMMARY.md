@@ -43,16 +43,7 @@ output:
     * [How to use](/docs/Hardware/Modules/usecases/rs485/usage.md)    
 
 
-* [Pilot Nexus](docs/Hardware/Pilot_Nexus/Features.md)
-  * [MCU (Microcontroller unit)](docs/Hardware/Pilot_Nexus/Key_Components/MCU.md)
-  * [CPLD (Complex programmable logic device)](docs/Hardware/Pilot_Nexus/Key_Components/CPLD.md)
-
-
-
-
-
 ### Contact 
-
 * [Contact](docs/contact.md)
 
 ---

@@ -37,7 +37,14 @@ This SBC extension has been built to encompass a huge range of potential applica
 * Cut-out for Raspberry Pi display cable.
 * 50 mA power consumption.
 
+
+## Dimensions
+
+* Dimensions: 80mm x 56.2 mm.
+
 ---
+
+
 
 ## Benefits of using Pilot Nexus
 
