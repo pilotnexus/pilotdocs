@@ -7,6 +7,14 @@ title: "Product Overview"
 <p class="sub1">
 About the Pilot Nexus automation platform and how to get started.</p>
 
+
+
+
+![The Pilot nexus](/images/mainboard.png "Pilot Nexus Mainboard")
+
+
+
+
 ---
 
 ## What is Pilot Nexus?
