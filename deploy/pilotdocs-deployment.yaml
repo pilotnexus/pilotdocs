@@ -1,15 +1,17 @@
-apiVersion: apps/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: pilotdocs
   namespace: default
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: pilotdocs
   template:
     metadata:
       labels:
         app: pilotdocs
-        tier: backend
     spec:
       containers:
         - name: app
