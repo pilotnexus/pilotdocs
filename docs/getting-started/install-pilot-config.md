@@ -2,7 +2,20 @@
 description: Install Pilot Config
 ---
 
-# Getting Started
+
+
+{% hint style="danger" %} This page explains the alternate setup steps required to install the pilot manually on a stock raspbian image.
+
+These steps are **normally not needed** anymore and are just left here for reference. 
+
+Please use the Pilotetcher to [get started](/docs/getting-started/etcher.md) 
+{% endhint %}
+
+
+# Install Pilot Config
+
+
+
 <p class="sub1">Install Tools on the Raspberry Pi and interact with the Hardware</p>
 
 {% hint style="info" %} You need an SD card with a Raspbian or Ubuntu Mate Image. Look [here](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) if you need help setting up the Operating System.
@@ -10,50 +23,91 @@ description: Install Pilot Config
 
 Pilot-Config is a tool that sets up your Rapberry Pi as a Node and installs the Pilot Drivers that communicate to the Pilot Mainboard and configures your firmware for the [modules](/docs/modules/module_overview.md) used.
 
+
+
+
+
 ## Install Pilot-Config
 
  Create a user on amescon.com
   You will need username and password for the pilot-config tool. Check your email to verify your email address.
 
-1.  Run:
+1. Install Pip3
+  `sudo apt-get install -y python3-pip`
+2. Install Pilot-Config:
   `sudo -H pip3 install pilot-config`
+3. Run:
+  `sudo pilot setup`
 
-2. Run:
-  `sudo pilot`
+4. If you are running the tool for the first time, drivers are installed and a reboot is required.
 
-3. If you are running the tool for the first time, drivers are installed and a reboot is required.
-
-4. After reboot, re-run sudo pilot
+5. After reboot, re-run sudo pilot
   Log in with your user credentials.
   Inserted boards should be automatically detected and you can build and install the firmware for it. 
 
 
-# Troubleshooting
 
-yuyuy
 
-## Linux Driver
 
-Please check that your Raspberry Pi runs a supported kernel version. You can check this by running `uname -a` in the Terminal. You should get a response similar to this:
+
+
+
+
+
+# Install Pilot Node
+<p class="sub1">Remote access your Raspberry Pi and Pilot-connected Hardware</p>
+
+---
+
+To harness the full power of the Pilot Automation Platform, you need to install Pilot Node on your Raspberry Pi. PilotNode is a service that connects the Raspberry Pi to the Pilot Cloud, making it accessible from wherever you are, from the Pilot Cockpit Web and Mobile App and the Pilot API. It also enables powerful data logging and analysis.
+
+### 1. Install NodeJS
+
+{% hint style="warning" %}
+Note: If you have NodeJS installed already on your Raspberry Pi remove it first!
+``` bash
+sudo -i
+apt-get remove nodered -y
+apt-get remove nodejs nodejs-legacy -y
+exit
 ```
-Linux raspberry 4.14.50-v7+ #1122 SMP Tue Jun 19 12:26:26 BST 2018 armv7l GNU/Linux
+{% endhint %}
+
+First get Node and install it:
+``` bash
+sudo sh -c 'curl -sL https://deb.nodesource.com/setup_10.x | bash -'
+sudo apt-get install -y nodejs
 ```
-Check if the version, in this example `4.14.50-v7+ #1122`, is in the list below:
-<p id="kernelversions" style="opacity: 0.3;">loading kernel versions...
-<script>
-  var xmlHttp = new XMLHttpRequest();
-  xmlHttp.onreadystatechange = function() { 
-    if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
-      var list = JSON.parse(xmlHttp.responseText);
-      var innerHtml = "";
-      for (var i = 0; i < list.length; i++) {
-        innerHtml += '<li style="font-size: 0.8em;">' + list[i]["version"] + " #" + list[i]["buildnum"] + "</li>";
-      }
-      var kv = document.getElementById("kernelversions");
-      kv.innerHTML = '<ul style="border-style: solid; border-width: 2px; border-color:lightgray; border-radius:6px; columns: 2; -webkit-columns: 2; -moz-columns: 2;">' + innerHtml + "</ul>";
-      kv.removeAttribute("style");
-    }
-  };
-  xmlHttp.open("GET", "https://mypilot.io/kernelversions", true); 
-  xmlHttp.send(null);
-</script> </p>
+
+You can verify if that worked by getting the version numbers:
+
+``` bash
+$ node --version
+v10.7.0
+$ npm --version
+6.1.0
+```
+### 2. Install Pilotnode
+
+Run:
+``` bash
+$ sudo npm install -g pilotnode
+```
+
+
+### 3. Register Pilotnode as a Service
+
+Register service:
+```
+$ pilotnode install
+```
+
+run at boot:
+```
+sudo systemctl enable pilotnode
+```
+
+status:
+```
+sudo systemctl status pilotnode
+```

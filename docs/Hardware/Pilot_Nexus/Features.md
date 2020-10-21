@@ -1,8 +1,6 @@
 ### Features
 
-* Slots for up to four extension modules, each providing a wide variety of additional functionalities \(see _**\_**_ \).
-* 32 bit ARM microcontroller for real-time operating.
-* Altera CPLD for synamic wiring and ultra-fast logic.
+* Slots for up to four extension modules, each providing a wide variety of additional functionalities.
 * Real-time clock \(CR1025 battery required for RTC\).
 * Open source software and full driver support.
 * Automatically detects and configures all connected devices.

@@ -7,7 +7,7 @@
         <template v-for="(configgroup, key, index) in configurations">
           <li class="dropdown-header" v-html="configgroup.title"></li>
           <template v-for="(config, cfgkey, index) in configgroup">
-          <li v-html="config.title" v-on:click="setConfig(key, cfgkey, config.settings)" class="pin" v-bind:class="{'selected': cfgkey==selectedconfig}"></li>
+          <li v-html="config.title" v-on:click="setConfig(key, cfgkey, config.settings, config.wiring)" class="pin" v-bind:class="{'selected': cfgkey==selectedconfig}"></li>
           </template>
         </template>
         </ul>
@@ -76,12 +76,30 @@
             configurations
       },
       methods: {
-        setConfig: function(cfggroup, config, settings) {
+        setConfig: function(cfggroup, config, settings, wiring) {
             this.selectedconfiggroup = cfggroup;
             this.selectedconfig = config;
             this.selectedconfigsettings = settings;
-            //console.log('config set to ' + config + ' ' + cfggroup);
-        // do stuff
+       
+
+
+       console.log('config set to ' + config + ' ' + cfggroup + ' ' + wiring);
+
+
+
+            //enable the wiring d iagrams for the selected configuration
+            var activeWirings = document.getElementsByClassName("wiring isActive"); 
+            for (var i = 0; i < activeWirings.length; i++) {
+              activeWirings[i].classList.remove('isActive');
+            }
+
+            for (var i = 0; i < wiring.length; i++) {
+              document.getElementById(wiring[i]).classList.add('isActive');
+            }
+
+
+
+ 
         }
       },
       mounted: function() {

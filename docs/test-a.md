@@ -2,7 +2,7 @@
 description: Test A Desc
 ---
 
-# PiLOT Overview
+# Pilot Overview
 
 ## Introduction
 
@@ -28,7 +28,7 @@ TODO
 
 ## Hardware
 
- [![PiLOT Ctrl Main Board](https://amescon.com/wp-content/uploads/2018/04/pilot-1.png?raw=true)](https://www.apertus.org/axiom-beta)   
+ [![Pilot Main Board](https://amescon.com/wp-content/uploads/2018/04/pilot-1.png?raw=true)](https://www.apertus.org/axiom-beta)   
  **Test test test**   
    
  The Pilot main board is a smart, standalone device and incorporates its own microprocessor \(This is programmed automatically or a user can program it themselves\), so it wouldn't neccesarily require a SBC depending on user requirements. This is an important feature because it allows for configuartion of timing behaviour - useful for **\_\_**.

@@ -7,12 +7,20 @@ title: "Product Overview"
 <p class="sub1">
 About j the Pilot Nexus automation platform and how to get started.</p>
 
+
+
+
+![The Pilot nexus](/images/mainboard.png "Pilot Nexus Mainboard")
+
+
+
+
 ---
 
 ## What is Pilot Nexus?
 
 
-Pilot Nexus brings you the ability to upgrade [SBCs](https://en.wikipedia.org/wiki/Single-board_computer) (single-board computers) into very powerful control platforms.
+Pilot Nexus is a **standalone** control and measurement platfrom that uses [SBCs](https://en.wikipedia.org/wiki/Single-board_computer) (single-board computers) as a configration and network backend.
 
 With a range of low-cost plugin modules available, each backed by rich software applications designed to make installation and operation easy, the device is ideal for managing industrial automation, home automation, and vastly improving upon the communications between multiple control devices.
 
@@ -23,7 +31,7 @@ This SBC extension has been built to encompass a huge range of potential applica
 ## Features
 
 
-* Slots for up to four extension modules, each providing a wide variety of additional functionalities \(see _**\_**_ \).
+* Slots for up to four extension modules, each providing a wide variety of additional functionalities.
 * 32 bit ARM microcontroller for real-time operating.
 * Altera CPLD for dynamic wiring and ultra-fast logic.
 * Real-time clock \(CR1025 battery required for RTC\).
@@ -31,32 +39,39 @@ This SBC extension has been built to encompass a huge range of potential applica
 * Automatically detects and configures all connected extension modules.
 * Mounting holes for module slots \(M2, screws included\).
 * Optional debugging headers.
-* Cut-out for RaspberryPi display cable.
 * Power indicators.
 * Raspberry Pi aligned mounting holes.
 * Raspberry Pi connector.
+* Cut-out for Raspberry Pi display cable.
 * 50 mA power consumption.
 
+
+## Dimensions
+
+* Dimensions: 80mm x 56.2 mm.
+
 ---
+
+
 
 ## Benefits of using Pilot Nexus
 
 
 <span class="emphasize">up and running quickly</span> - Connect your hardware and control/monitor it over the web in a  matter of minutes.
 
-<span class="emphasize">online and offline</span> - It has been developed to be cloud-native, but it can also be used without a connection to the cloud, without being connected to your own servers, or completely offline if preferred. This enables many use-cases that wouldn't ordinarily be possible with most IoT devices.
+<span class="emphasize">online and offline</span> - It has been developed to be cloud-native, but it can also be used without a connection to the cloud, being connected to your own servers, or completely offline if preferred. This enables many use-cases that wouldn't ordinarily be possible with most IoT devices.
 
-<span class="emphasize">modular</span> - Flexible modules enable you to connect almost any hardware devices across a wide spectrum of potential applications, e.g. maker projects, building automation routines and controlling industrial automation systems.
+<span class="emphasize">modular</span> - Flexible modules enable you to connect almost any hardware devices across a wide spectrum of potential applications, e.g. building automation routines and controlling industrial automation systems but also maker projects.
 
 <span class="emphasize">flexible</span> - Powerful drivers expose the hardware interface to the linux virtual file system. This enables you to use any programming language and interact with the hardware via Linux. 
 
-<span class="emphasize">real-time clocking</span> - Use this powerful feature to compile real-time code directly into the firmware and enable super-relieable control-loops that are independent of the state of a Linux system.
+<span class="emphasize">real-time clocking</span> - Use this powerful feature to compile real-time code directly into the firmware and enable super-reliable control-loops that are independent of the state of a Linux system.
 
 <span class="emphasize">open source software</span> - Change whatever you want in whatever way you want. From the highest level, e.g. your web-based monitoring dashboard, down to the firmware.
 
 ---
 
-## Advantages over standard PLCs?
+## Advantages over standard PLCs
 
 
 - Lower cost.
@@ -72,11 +87,11 @@ This SBC extension has been built to encompass a huge range of potential applica
 ## Advantages over conventional microcontroller boards
 
 
-- Communication to a Linux PC (Raspberry Pi) is already implemented and open-source.
+- Communication to a Linux SBC is already implemented and open-source.
 - Due to native Linux serial port support you can communicate with extension boards like the GSM or GPS modules easily.
 - Pilot Nexus is not confined purely to I/O capabilities so there's no need to develop your own PCB for communications. 
 - Read sensors, control motors or relays simply by choosing the appropriate modules.
-- Handle complex things on the Raspberry Pi (Webserver, Ethernet communication, Database storage) with the appropriate tools, e.g. Python or Mono, and let the Pilot Nexus kernel drivers handle low-level communications with the outside world.
+- Handle complex things on the SBC (Webserver, Ethernet communication, Database storage) with the appropriate tools, e.g. Python or Mono, and let the Pilot Nexus kernel drivers handle low-level communications with the outside world.
 
 ---
 
