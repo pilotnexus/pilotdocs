@@ -5,7 +5,7 @@ title: "Product Overview"
 # Introduction
 
 <p class="sub1">
-About the Pilot Nexus automation platform and how to get started.</p>
+About j the Pilot Nexus automation platform and how to get started.</p>
 
 ---
 

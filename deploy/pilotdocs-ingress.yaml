@@ -3,9 +3,14 @@ kind: Ingress
 metadata:
   name: pilotdocs
   annotations:
-    traefik.ingress.kubernetes.io/frontend-entry-points: http,https
-    traefik.ingress.kubernetes.io/redirect-entry-point: https
+    acme.kubernetes.io/enable: "true"
+    acme.kubernetes.io/dns: "dns_gd"
+    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
+  tls:
+  - hosts:
+    - docs.pilotnexus.io
+    secretName: testsecret-tls
   rules:
   - host: docs.pilotnexus.io
     http:

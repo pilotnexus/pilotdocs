@@ -9,7 +9,7 @@ cache:
   - node_modules/
 
 build:
-  image: node:8.11.4-alpine
+  image: node:12.13.0-alpine
   stage: build
   script:
     - apk update && apk add git

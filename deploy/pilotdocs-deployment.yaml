@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: gitlab.amescon.com:5005/amd/pilotdocs:production
+          image: registry.gitlab.com/amescon/pilot-nexus/pilotdocs:production
           imagePullPolicy: Always
           ports:
             - containerPort: 80
